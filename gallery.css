@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+.trans:hover, trans:active{background-color:#4debc9;}
+.banner:hover, banner:active{background-color:#fc1703;
+}
+a:link,a:visited{
+background-color:#f0ebe6;
+padding:20px 50px;
+text-align:center;
+}
+a:hover,a:active{
+background-color:#0be6d3;
+}
+*{
+  box-sizing: border-box;
+}
+section,article{
+font-family:"arial black";
+color:black;
+content: "";
+justify-content:center;
+}
+img:hover
+{
+opacity:0.9
+cursor: pointer;
+transform: translateY(-8px);
+transition: all ease 0.3s;
+opacity:1.0;
+
+}
+.navbar  a{
+text-decoration: none;
+color: #4f4842;
+text-transform: uppercase;
+
+}
+
+
+.head-bottom p{
+    opacity:0.9;
+    font-size: 25px;
+    margin: 35px auto;
+    width: 70vw;
+}
+
+
+.h1{
+font-size: 3.0vw;
+padding-bottom:15px;
+text-transform: uppercase;
+}
+
+.footer{
+background:#1a1a1c;
+color:white;
+}

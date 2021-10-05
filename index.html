@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HOTEL BOOKING</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+        
+    </head>
+    <body>
+        <div class="banner">
+        <!-- header -->
+        <header class = "header" id = "header">
+            <div class = "head-top">
+                <div class = "site-name">
+                    <span> TAJ HOTEL</span>
+                </div>
+                <div class = "site-nav">
+                    <span id = "nav-btn">MENU <i class = "fas fa-bars"></i></span>
+                </div>
+            </div>
+
+            <div class = "head-bottom flex">
+                <h2>NICE AND COMFORTABLE PLACE TO STAY</h2>
+                <p> High-design, modern comfort and timeless art mingle within the walls of the historic building, creating the ultimate boutique experience.</p>
+<a href="file:///C:/Users/DELL/Desktop/hotel/gallery.html" target="_blank" >           
+
+  <button type = "button" class = "head-btn">--GALLERY--</button>
+           </a> </div>
+</div>
+        </header>
+        <!-- end of header -->
+
+        <!-- side navbar -->
+        <div class = "sidenav" id = "sidenav">
+            <span class = "cancel-btn" id = "cancel-btn">
+                <i class = "fas fa-times"></i>
+            </span>
+
+            <ul class = "navbar">
+                <li><a href = "#header">home</a></li>
+                <li><a href = "#services">services</a></li>
+		<li><a href = "#book">book now</a></li>
+                <li><a href = "#rooms">rooms</a></li>
+                <li><a href = "#customers" >customers</a></li>
+		<li><a href = "gallery.html" target="_blank">Gallery</a></li>
+              
+            </ul>
+		<a href="file:///C:/Users/DELL/Desktop/hotel/sign.html" target="_blank">
+         <button class = "btn sign-up"> sign up</button></a>
+
+		<a href="file:///C:/Users/DELL/Desktop/hotel/log.html">
+      <button class = "btn log-in">Login</button></a>
+
+        </div>
+
+        <!-- end of side navbar -->
+
+        <!-- fullscreen modal -->
+        <div id = "modal"></div>
+        <!-- end of fullscreen modal -->
+
+        <!-- body content  -->
+        <section class = "services sec-width" id = "services">
+            <div class = "title">
+                <h1>services</h1>
+            </div>
+            <div class = "services-container">
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-utensils"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Food Service/Drink</h2>
+                        <p> hotel service enabling guests to choose items of food and drink for delivery to their hotel room for consumption. Room service is organised as a subdivision within the food and beverage department of high-end hotel. properties for the  Room service may be provided on a 24-hour basis or limited to late night hours only. Due to the cost of customized orders and delivery of room service.</p>
+                        
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-swimming-pool"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Refreshment</h2>
+                        <p>REFRESHMENT ROOM means a building or part thereof in which alcoholic or non-alcoholic beverages and related refreshments other than meals are offered or kept for retail sale to the public for immediate consumption therein!</p>
+                        
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-broom"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Housekeeping</h2>
+                        <p>A housekeeping role is to oversee the activities of the staff that cleaning the facilities to make sure of the sanitation, orderly and appeal of the rooms is up to high standard in the hotel but can also include other establishments such as hospitals and anything in a similar regard. they also address the complaints and inquires about the housekeeping service </p>
+                        
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-door-closed"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Hotel Security</h2>
+                        <p>Hotel security monitor the security system in the hotel and communal areas of the hotel. They establish and maintain emergency procedures, and identify and implement risk management programs on order to be prepared for an unlikely emergency situation such as food poisoning.!</p>
+
+                      
+
+                    </div>
+                </article>
+                <!-- end of single service -->
+            </div>
+        </section>
+	
+        <section class = "book" id="book">
+            <form class = "book-form">
+                <div class = "form-item">
+                    <label for = "checkin-date"  "checkout-date">Check Out Date: </label>
+                    <input type = "date" id = "chekin-date" "checkout-date">
+                </div>
+                <div class = "form-item">
+                    <label for = "place">Place: </label>
+                    <input type = "text" name="place" id="place" list="place1" placeholder="Select Place:">
+			<datalist id="place1">
+			<option>Bangalore</option>
+			<option>Mysore</option>
+			<option>Mangaluru</option>
+			<option>Hobbli</option>
+			<option>Ballari</option>
+			<option>Tumakuru</option>
+			<option>Udupi</option>
+			<option>Belagavi</option>
+			<option>Mandya</option>
+			</datalist>
+				
+                </div>
+                <div class = "form-item">
+                    <label for = "adult">Adults: </label>
+                    <input type = "number" min = "1" value = "1" id = "adult">
+                </div>
+                <div class = "form-item">
+                    <label for = "children">Children: </label>
+                    <input type = "number" min = "1" value = "1" id = "children">
+                </div>
+                <div class = "form-item">
+                    <label for = "rooms">Rooms: </label>
+                    <input type = "number" min = "1" value = "1" id = "rooms">
+                </div>
+		
+                <div class = "form-item">
+			<center>
+			 <button type = "button" id="mbt" class = "btn">book now</button>
+
+			</center>
+                    
+                </div>
+            </form>
+       
+	</section>
+        <section class = "rooms sec-width" id = "rooms">
+            <div class = "title">
+                <h1>rooms</h1>
+            </div>
+            <div class = "rooms-container">
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "room1.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Luxury Rooms</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Luxuriously appointed room with king bed.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Turndown Service.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Lutron Controlled lighting.
+                            </li>
+                        </ul>
+                        <p>Enjoy the first sips of morning coffee or rich evening aperitifs on your private balcony overlooking the heart of the city.  Our Balcony Suites provide the exclusive comforts of our Ivey's style with plush bedding, custom millwork and century-old flooring, elegant furnishing and one-of-a-kind artwork found inside each one of our guestrooms.</p>
+                        <p>Step inside our most coveted room style and discover a dreamy repose inside our premium Balcony Suites.  Drenched in sunlight, these three unique rooms offer a beautiful escape for two or a fresh experience for the adventurous heart.</p>
+                        <p class = "rate">
+                            <span>$219.00 /</span> Per Night
+                        </p>
+			<a href="file:///C:/Users/DELL/Desktop/hotel/index.html#book"> 
+                        <button type = "button" class = "btn">Book Now</button></a>
+                    </div>
+                </article>
+                <!-- end of single room -->
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "room2.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Luxury Rooms</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Fully stocked Mini-bars.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Lutron Controlled lighting.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Luxuriously appointed room with king bed.
+                            </li>
+                        </ul>
+                        <p>Discover true comfort inside our most spacious suite. With two styles available, guests may choose between the plush King or two deluxe Queen beds, both outfitted with a luxurious separate living area, fully stocked wet bar, and one-and-a-half sparkling baths.
+
+Entertain, relax, and then retreat to your luxurious bedroom. </p>
+                        
+                        <p class = "rate">
+                            <span>$329.00 /</span> Per Night
+                        </p>
+				<a href="file:///C:/Users/DELL/Desktop/hotel/index.html#book"> 
+                        <button type = "button" class = "btn">Book now</button></a>
+                    </div>
+                </article>
+                <!-- end of single room -->
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "room3.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Luxury Rooms</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Luxuriously appointed room with king bed.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Fully stocked Mini-bars.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Lutron Controlled lighting.
+                            </li>
+                        </ul>
+                        <p>Facing our Grand Atrium, our interior rooms offer a quiet retreat for the most discerning travelers.  Each detail has been meticulously thought out, with custom-designed furnishings, spotless spa bathrooms, and intricate artistic details.
+
+Plush Italian bedding adorns our custom-made organic king mattresses providing the most tranquil experience inside of our premium retreat.</p>
+                        
+                        <p class = "rate">
+                            <span>$429.00 /</span> Per Night
+                        </p>
+                         <a href="file:///C:/Users/DELL/Desktop/hotel/index.html#book"> 
+                        <button type = "button" class = "btn">Book Now</button></a>
+                    </div>
+                </article>
+                <!-- end of single room -->
+            </div>
+        </section>
+
+
+        <section class = "customers" id = "customers">
+            <div class = "sec-width">
+                <div class = "title">
+                    <h1>customers</h1>
+                </div>
+                <div class = "customers-container">
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "stars">
+                          <span><i class = "fas fa-star"></i></span>
+                              <span><i class = "fas fa-star"></i></span>
+                             <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                           <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>We Loved it</h3>
+                        <p>We stayed for 3 nights there,great location, the room was spacious, the people working at the reception very kind and helpful, breakfast was very good!!!"</p>
+                        <img src = "cus1.jpeg" alt = "customer image">
+                        <span>Bharath, South Afirica</span>
+                    </div>
+                    <!-- end of single customer -->
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "stars">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Comfortable Living</h3>
+                        <p>Very friendly staff, basic room but had everything you need, clean and tidy and good value for money considering the central location and the fact this is Helsinki. Had breakfast delivered to my room and it was absolutely fabulous.</p>
+                        <img src = "cus2.jpeg" alt = "customer image">
+                        <span>jony , America</span>
+                    </div>
+                    <!-- end of single customer -->
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "starts">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Nice Place</h3>
+                        <p>The hotel located in the city center and lots of public transport, nearby restaurants, bars etc. The hotel staff are nice and friendly. Breakfast not bad. The room a bit small but the bed is really comfortable.</p>
+                        <img src = "cus3.jpeg" alt = "customer image">
+                        <span>Raj Kumar, India</span>
+                    </div>
+                    <!-- end of single customer -->
+                </div>
+            </div>
+        </section>
+        <!-- end of body content -->
+        
+        <!-- footer -->
+        <section class = "footer">
+            <div class = "footer-container">
+                <div>
+                    <h2>About Us </h2>
+                    <p>Welcome to Hotels.com
+is a leading provider of hotel accommodation worldwide, offering booking services through its own network of localised websites.
+ The company offers a one-stop shopping source for hotel pricing, amenities and availability.</p>
+                    <ul class = "social-icons">
+                        <li class = "flex">
+                            <i class = "fa fa-twitter fa-2x"></i>
+                        </li>
+                        <li class = "flex">
+                            <i class = "fa fa-facebook fa-2x"></i>
+                        </li>
+                        <li class = "flex">
+                            <i class = "fa fa-instagram fa-2x"></i>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2>Useful Links</h2>
+               
+                    <a href = "#rooms">Rooms</a>
+                    <a href = "#services">Services</a>
+                    <a href = "#book">Book Now</a>
+                </div>
+
+                <div>
+                    <h2>Privacy</h2>
+                    
+                    <a href = "#footer-container">About Us</a>
+                    <a href = "contact.html" target="_blank">Contact Us</a>
+                    <a href = "#services">Services</a>
+                </div>
+
+                <div>
+                    <h2>Have A Question</h2>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-map-marker-alt"></i>
+                        </span>
+                        <span>
+                            203 Fake St.Mountain View, San Francisco, California, USA
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-phone-alt"></i>
+                        </span>
+                        <span>
+                            +84545 37534 48
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-envelope"></i>
+                        </span>
+                        <span>
+				<a href="mailto:binduv917@gmail.com?subject=Email"> binduv917@gmail.com </a>
+                            
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end of footer -->
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>
